@@ -8,7 +8,7 @@ int main ()
 	system("color 70");
 	system("cls");
 	int a, ruc1, nota1,nota2,nota3,b;
-	float prom,z,x,c;
+	float prom,z,x,c,falla;
 	char nombre_empresa[30],repre_legal[30],razon_social[30],telf1[20],celualum[20],final_prac[20];
 	char nombre_alumno[30],correo1[20],cod_alumno[20],dni1[20],telfalum[30],inicio_Prac[40],horas_dia[20];
 	char aper_carp[20];
