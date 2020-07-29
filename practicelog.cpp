@@ -8,7 +8,7 @@ int main ()
 	system("color 70");
 	system("cls");
 	int a, ruc1, nota1,nota2,nota3,b;
-	float prom;
+	float prom,z,x,c,falla;
 	char nombre_empresa[30],repre_legal[30],razon_social[30],telf1[20],celualum[20],final_prac[20];
 	char nombre_alumno[30],correo1[20],cod_alumno[20],dni1[20],telfalum[30],inicio_Prac[40],horas_dia[20];
 	char aper_carp[20];
@@ -23,6 +23,7 @@ int main ()
 	cout<<" 5.- Ingrese los Notas Obtenidas por el Alumno -----------> OPC 5 \n";
 	cout<<" 6.- Imprimir Constancia de Practicas --------------------> OPC 6 \n";
 	cout<<" 7.- Salir del Programa ----------------------------------> OPC 7 \n";
+	cout<<" 8.- Promedio de las ter primeras notas ------------------> OPC 8 \n";
 	cin>>a;
 	
 	switch (a)
@@ -142,6 +143,22 @@ int main ()
 					cout<<"cerrando programa "<<endl;
 					cout<<"presione cualquier tecla para salir "<<endl;
 			}
+		system("PAUSE");
+		goto menu;
+		break;
+		case (8):
+			cout<<"ingrese el valor de la primera nota "<<endl;
+			cin>>z;
+			cout<<"ingrese el valor de la segunda nota "<<endl;
+			cin>>x;
+			cout<<"ingrese el valor de la tercera nota "<<endl;
+			cin>>c;
+			
+			float promedio = (z+x+c)/3;
+			cout<<"el promedio de las notas es ---> "<<promedio <<endl;
+		system("PAUSE");
+		goto menu;
+		break;
 		}
 	system("pause");
 	return 0;
