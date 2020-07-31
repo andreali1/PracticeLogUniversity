@@ -162,7 +162,6 @@ int main ()
 		break;
 
 		}
-	cout<< " mierda "<< endl;
 	system("pause");
 	return 0;
 	
