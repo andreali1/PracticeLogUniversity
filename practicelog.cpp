@@ -11,7 +11,7 @@ int main ()
 	float prom,z,x,c,falla;
 	char nombre_empresa[30],repre_legal[30],razon_social[30],telf1[20],celualum[20],final_prac[20];
 	char nombre_alumno[30],correo1[20],cod_alumno[20],dni1[20],telfalum[30],inicio_Prac[40],horas_dia[20];
-	char aper_carp[20];
+	char aper_carp[20], asig_uno[20], asig_dos[20], asig_tres[20];
 	menu:
 	system("cls");
 	cout<<" \t    Sistema de registro de practicas PreProfesionales\n";
@@ -24,6 +24,7 @@ int main ()
 	cout<<" 6.- Imprimir Constancia de Practicas --------------------> OPC 6 \n";
 	cout<<" 7.- Salir del Programa ----------------------------------> OPC 7 \n";
 	cout<<" 8.- Promedio de las ter primeras notas ------------------> OPC 8 \n";
+	cout<<" 9.- Ingrese asignaturas del alumno ----------------------> OPC 9 \n";
 	cin>>a;
 	
 	switch (a)
@@ -159,8 +160,24 @@ int main ()
 		system("PAUSE");
 		goto menu;
 		break;
+		case (9):
+			cout<<"Imgrese la primera asignatura del alumno <<endl;
+			cin>>asig_uno;
+			cout<<"Ingrese la segunda asignatura del alumno <<endl;
+			cin>>asig_dos;
+			cout<<"ingrese la tercera asignatura del alumnon<<endl;
+			cin>>asig_tres;
+			cout<<"las tres asignaturas llevadas por el alumno son."<<endl; 
+			cout<<asig_uno;
+			cout<<asig_dos;
+			cout<<asig_tres;
+		system("PAUSE");
+		goto menu;
+		break;
 		}
 	system("pause");
 	return 0;
 	
 }
+
+
