@@ -159,20 +159,7 @@ int main ()
 		system("PAUSE");
 		goto menu;
 		break;
-		case (9):
-			cout<<"Imgrese la primera asignatura del alumno "<<endl;
-			cin>>asig_uno;
-			cout<<"Ingrese la segunda asignatura del alumno "<<endl;
-			cin>>asig_dos;
-			cout<<"ingrese la tercera asignatura del alumnon"<<endl;
-			cin>>asig_tres;
-			cout<<"las tres asignaturas llevadas por el alumno son."<<endl; 
-			cout<<asig_uno;
-			cout<<asig_dos;
-			cout<<asig_tres;
-		system("PAUSE");
-		goto menu;
-		break;
+		
 		}
 	system("pause");
 	return 0;
